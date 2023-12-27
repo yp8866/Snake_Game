@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeGame</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div>
+        <button id="start">Start</button>
+    </div>
+    <div id="score">
+        Your Score: <span id="scorecnt">0</span>
+    </div>
+    <div id="speed">
+        <select name="speedoption" id="speedoption" onchange="speedChange(this.value)">
+            <option value="300">Basic</option>
+            <option value="150">Moderate</option>
+            <option value="80">Advanced</option>
+        </select>
+    </div>
+    <div id="highest">
+        Highest Score: <span id="highestscorecnt">0</span>
+    </div>
+    <div id="main">
+        <!-- <div class="snake">
+            
+        </div>
+        <div class="food">
+            
+        </div> -->
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

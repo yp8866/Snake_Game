@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* --lft: 50; */
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    width: 1000px;
+    border: 2px solid black;
+    height: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+
+.snake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+#main .snake:first-child {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.food {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    /* top: 50px; */
+    border-radius: 5px;
+    background-color: black;
+    animation: blinkFood 1s linear infinite;
+}
+
+
+@keyframes blinkFood {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+
+
+#start {
+    position: fixed;
+    top: 50%;
+    left: 47%;
+    padding: 20px;
+    background-color: rgb(36, 142, 15);
+    border-radius: 10px;
+    font-size: 2rem;
+    color: #fff;
+    z-index: 2;
+
+}
+
+#score {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    font-size: 0.8rem;
+    /* color: white; */
+    font-weight: 800;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+#highest {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    font-size: 0.8rem;
+    /* color: white; */
+    font-weight: 800;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+#speed select {
+    position: fixed;
+    top: 140px;
+    left: 10px;
+    font-size: 0.8rem;
+    /* color: white; */
+    font-weight: 800;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+}
